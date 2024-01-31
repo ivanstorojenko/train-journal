@@ -1,23 +1,23 @@
-import {Button} from "@nextui-org/react";
-import TrainCard from "./components/TrainCard";
+import {Routes, Route,useNavigate} from 'react-router-dom';
+import { NextUIProvider } from '@nextui-org/react';
+import HomePage from './pages/HomePage.jsx'
+import EditWorkout from './pages/EditWorkout.jsx'
 import './App.css'
 
 function App() {
+  const navigate = useNavigate();
 
   return (
-    <>
+    <NextUIProvider navigate={navigate}>
       <div 
-      className="max-w-xl m-auto flex flex-col py-4 px-4 gap-unit-10"
+        className="max-w-xl m-auto flex flex-col py-4 px-4 gap-10"
       >
-        <h1>Дневник тренировок</h1>
-        <h2>Журнал тренировок</h2>
-        <TrainCard></TrainCard>
-        <TrainCard></TrainCard>
-        <Button color="primary" variant="shadow">
-          Добавить тренировку
-        </Button>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/edit-workout" element={<EditWorkout />} />
+        </Routes>
       </div>
-    </>
+    </NextUIProvider>
   )
 }
 

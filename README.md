@@ -1,4 +1,6 @@
-# React + Vite
+# Журнал тренировок (демо)
+
+Приложение для учета/планирования тренировок (демо).
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
