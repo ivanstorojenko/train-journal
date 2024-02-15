@@ -1,6 +1,7 @@
 import {Routes, Route,useNavigate} from 'react-router-dom';
 import { NextUIProvider } from '@nextui-org/react';
 import HomePage from './pages/HomePage.jsx'
+import ShowWorkout from './pages/ShowWorkout.jsx'
 import EditWorkout from './pages/EditWorkout.jsx'
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/edit-workout" element={<EditWorkout />} />
+          <Route path="/show-workout" element={<ShowWorkout />} />
         </Routes>
       </div>
     </NextUIProvider>

@@ -6,7 +6,7 @@ function EditWorkout() {
             <div
             className="flex flex-col gap-0">
                 <span className="text-xs font-bold text-default-500">
-                    Редактирование тренировки
+                    Просмотр тренировки
                 </span>
                 <h2 className="text-2xl font-bold">
                     30.01.2024
@@ -14,7 +14,7 @@ function EditWorkout() {
             </div>
             <div className="fixed bottom-8 w-full max-w-xl flex items-center">
                 <Button color="primary" variant="shadow" className="m-auto">
-                    Добавить упражнение
+                    Редактировать тренировку
                 </Button>
             </div>
     </>
